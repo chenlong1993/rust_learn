@@ -42,6 +42,10 @@ fn main() {
     println!("元组1值为{}", tup1.0);
     println!("元组1值为{}", tup1.2);
     println!("元组2值为{},{}", tup1.0, tup2.1.1);
+
+    let product_tup:(i32,(f64,bool,(i32,f64))) = (100, (2.0, true, (10, 20.0)));
+
+    println!("product_tup值为{}", product_tup.1.2.0)
 }
 
 
