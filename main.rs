@@ -45,7 +45,14 @@ fn main() {
 
     let product_tup:(i32,(f64,bool,(i32,f64))) = (100, (2.0, true, (10, 20.0)));
 
-    println!("product_tup值为{}", product_tup.1.2.0)
+    println!("product_tup值为{}", product_tup.1.2.0);
+
+    let arr1=[1;5];
+
+    println!("数组1值为{}", arr1[0]);
+    //指定数组类型跟大小
+    let arr2:[f32;10] = [1.0;10];
+    println!("数组2值为{}", arr2[0]);
 }
 
 
