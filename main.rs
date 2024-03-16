@@ -1,3 +1,9 @@
+mod Student;
+
+enum Gender {
+    Male,
+    Female
+}
 fn main() {
     //定一个数组
     let genders = ["zhangsan", "lisi", "wangwu"];
@@ -53,6 +59,20 @@ fn main() {
     //指定数组类型跟大小
     let arr2:[f32;10] = [1.0;10];
     println!("数组2值为{}", arr2[0]);
+
+    // let student = Student{
+    //     name: "zhangsan".to_string(),
+    //     score: 100,
+    //     grade: "A".to_string(),
+    //     age: 18
+    // };
+    // println!("student name is {}", student.name);
+    let oaram = Gender::Female;
+
+    match oaram {
+        Gender::Male => println!("性别是男"),
+        Gender::Female => println!("性别是女")
+    }
 }
 
 
